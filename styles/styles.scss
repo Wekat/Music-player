@@ -1,0 +1,16 @@
+@use 'fonts';
+
+$main_colour: #1d1d1d;
+$side_colour: black;
+$block_colour: #444444;
+$font_colour_light: white;
+$font_colour_dark: rgb(218, 216, 216);
+
+.wrapper {
+    width: 100vw;
+    display: flex;
+}
+
+.aside  {
+    width: 20%;
+}
