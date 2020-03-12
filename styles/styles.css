@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   width: 100vw;
   display: flex;
@@ -16,15 +20,16 @@ body {
 .aside_top__item {
   margin-top: 20px;
   margin-bottom: 0;
-}
-.aside_top__item--link {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 20px;
-}
-.aside_top__item--symbol {
   padding-left: 15px;
+}
+.aside_top__item--link, .aside_playlist__row--link {
+  color: #9e9d9d;
+  font-size: 15px;
+  font-weight: 700;
+}
+.aside_top__item--symbol, .aside_playlist__row--symbol {
   padding-right: 10px;
+  font-size: 20px;
 }
 .aside .logo {
   font-family: "Baloo Chettan 2", cursive;
@@ -32,10 +37,39 @@ body {
 }
 .aside .logo--link {
   font-size: 40px;
+  color: #ffffff;
 }
 .aside .logo--symbol {
   padding-right: 10px;
   padding-left: 15px;
+  color: #ffffff;
+}
+.aside_playlist {
+  color: #9e9d9d;
+  margin-top: 30px;
+  padding-left: 15px;
+}
+.aside_playlist__heading {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.aside_playlist__row {
+  margin-top: 20px;
+}
+.aside_playlist__row:hover {
+  color: #ffffff;
+}
+.aside_bottom {
+  margin-top: 30px;
+  border-top: 1px solid #9e9d9d;
+  list-style: none;
+  height: 150px;
+  overflow: auto;
+}
+.aside_bottom__list_item {
+  padding-top: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
