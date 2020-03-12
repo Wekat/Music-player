@@ -1,10 +1,15 @@
 @use 'fonts';
 
 $main_colour: #1d1d1d;
-$side_colour: black;
+$side_colour: #000000;
 $block_colour: #444444;
-$font_colour_light: white;
-$font_colour_dark: rgb(218, 216, 216);
+$font_colour_light: #ffffff;
+$font_colour_dark: #dad8d8;
+
+body {
+    height: 100vh;
+    margin: 0;
+}
 
 .wrapper {
     width: 100vw;
@@ -13,4 +18,37 @@ $font_colour_dark: rgb(218, 216, 216);
 
 .aside  {
     width: 20%;
+    background-color: $side_colour;
+    font-family: fonts.$main_font;
+
+    &_top__item {
+        margin-top: 20px;
+        margin-bottom: 0;
+    
+
+        &--link {
+            text-decoration: none;
+            color: $font_colour_light;
+            font-size: 20px;
+        }
+
+        &--symbol {
+            padding-left: 15px;
+            padding-right: 10px;
+        }
+    }
+
+    .logo {
+        font-family: 'Baloo Chettan 2', cursive;
+        padding-bottom: 30px;
+        
+        &--link {
+            font-size: 40px;
+        }
+
+        &--symbol {
+            padding-right: 10px;
+            padding-left: 15px;
+        }
+    }
 }

@@ -1,3 +1,8 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
 .wrapper {
   width: 100vw;
   display: flex;
@@ -5,6 +10,32 @@
 
 .aside {
   width: 20%;
+  background-color: #000000;
+  font-family: "Sen", sans-serif;
+}
+.aside_top__item {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.aside_top__item--link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+.aside_top__item--symbol {
+  padding-left: 15px;
+  padding-right: 10px;
+}
+.aside .logo {
+  font-family: "Baloo Chettan 2", cursive;
+  padding-bottom: 30px;
+}
+.aside .logo--link {
+  font-size: 40px;
+}
+.aside .logo--symbol {
+  padding-right: 10px;
+  padding-left: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
