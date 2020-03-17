@@ -178,30 +178,15 @@ a {
     margin-right: 30px;
 }
 
-/*the container must be positioned relative:*/
-.custom-select {
-    position: relative;
+.select_items {
+    width: 200px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid $block_colour;
+    border-radius: 20px;
+    color: $font_colour_dark;
     font-family: fonts.$main_font;
-}
-  
-.custom-select select {
-    display: visible; /*hide original SELECT element:*/
-}
-  
-.select-selected {
-    background-color: DodgerBlue;
-}
-  
-/*style the arrow inside the select element:*/
-.select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
+    padding-left: 20px;
 }
 
 .main {
