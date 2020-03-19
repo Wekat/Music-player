@@ -9,6 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e0eafdef0d.js" crossorigin="anonymous"></script>
+    <script>
+        var play = true;
+        function playpause() {
+            play = !play;
+            var elm = document.getElementById("play_button");
+            if(!play) {
+                elm.classList.remove("fa-play");
+                elm.classList.add("fa-pause");
+            } else {
+                elm.classList.remove("fa-pause");
+                elm.classList.add("fa-play");
+                
+            }
+        }
+    </script>
+
 
 </head>
 <body>
@@ -233,7 +249,7 @@
                 <div class="footer_container__mid_top">
                     <div class="footer_container__mid_top--symbol" title="Shuffle"><i class="fas fa-random"></i></div>
                     <div class="footer_container__mid_top--symbol" title="Step backwards"><i class="fas fa-step-backward"></i></div>
-                    <div class="footer_container__mid_top--symbol" title="Play"><i class="fas fa-play"></i></div>
+                    <div class="footer_container__mid_top--symbol" title="Play"><i id="play_button" class="fas fa-play" onclick="playpause()"></i></div>
                     <div class="footer_container__mid_top--symbol" title="Step forward"><i class="fas fa-step-forward"></i></div>
                     <div class="footer_container__mid_top--symbol" title="Loop"><i class="fas fa-retweet"></i></div>
                 </div>
